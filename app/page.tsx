@@ -158,8 +158,14 @@ export default function Portfolio() {
   const certifications = [
     { name: "Python Essentials 1 & 2", issuer: "Cisco Networking Academy", date: "30 April 2025" },
     { name: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy", date: "30 April 2025" },
+    { name: "CCNA Introduction to Networks", issuer: "Cisco Networking Academy", date: "13 june 2025" },
+    { name: "CCNA Enterprise Networking, Security, and Automation", issuer: "Cisco Networking Academy", date: "13 june 2025" },
+    { name: "CCNA Switching, Routing, and Wireless Essentials", issuer: "Cisco Networking Academy", date: "16 june 2025" },
     { name: "AWS Academy Cloud Foundations", issuer: "AWS Academy Graduate", date: "03 April 2025" },
     { name: "Data Analytics Job Simulation", issuer: "Deloitte (via Forage)", date: "26 February 2025" },
+    { name: "Getting Started with DevOps", issuer: "LinkedIn", date: "21 june 2025" },
+    { name: "Introduction to Artificial Intlligence", issuer: "LinkedIn", date: "5 march 2025" },
+    { name: "Practical GitHub Project Management and Collaboration", issuer: "LinkedIn", date: "21 December 2024" },
     {
       name: "Problem Solving, Aptitude, and Soft Skills Training",
       issuer: "SDFS, KIET Group of Institutions",
@@ -903,9 +909,15 @@ Doctor's Appointment System (Oct-Dec 2023)
 CERTIFICATIONS
 - Python Essentials 1 & 2 - Cisco Networking Academy
 - Introduction to Cybersecurity - Cisco Networking Academy
+- CCNA Enterprise Networking, Security, and Automation - Cisco Networking Academy
+- CCNA Introduction to Networks - Cisco Networking Academy
+- CCNA Switching, Routing, and Wireless Essentials - Cisco Networking Academy
 - AWS Academy Cloud Foundations - AWS Academy
 - Data Analytics Job Simulation - Deloitte (via Forage)
 - UI/UX - Innovation Cell KIET
+- Getting Started with DevOps
+- Introduction to artificial Intelligence
+- Practice Github Project Management and Colla
 
 ACHIEVEMENTS
 - Gold Medal in Volleyball - Inter-School Sports Competition
