@@ -29,6 +29,7 @@ import {
 import Image from "next/image"
 import { sendContactMessage } from "./actions/contact"
 import { useActionState } from "react"
+import { Experience } from "@/components/experience"
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -45,7 +46,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "education", "skills", "projects", "certifications", "contact"]
+      const sections = ["home", "about", "education", "experience", "skills", "projects", "certifications", "contact"]
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -159,8 +160,16 @@ export default function Portfolio() {
     { name: "Python Essentials 1 & 2", issuer: "Cisco Networking Academy", date: "30 April 2025" },
     { name: "Introduction to Cybersecurity", issuer: "Cisco Networking Academy", date: "30 April 2025" },
     { name: "CCNA Introduction to Networks", issuer: "Cisco Networking Academy", date: "13 june 2025" },
-    { name: "CCNA Enterprise Networking, Security, and Automation", issuer: "Cisco Networking Academy", date: "13 june 2025" },
-    { name: "CCNA Switching, Routing, and Wireless Essentials", issuer: "Cisco Networking Academy", date: "16 june 2025" },
+    {
+      name: "CCNA Enterprise Networking, Security, and Automation",
+      issuer: "Cisco Networking Academy",
+      date: "13 june 2025",
+    },
+    {
+      name: "CCNA Switching, Routing, and Wireless Essentials",
+      issuer: "Cisco Networking Academy",
+      date: "16 june 2025",
+    },
     { name: "AWS Academy Cloud Foundations", issuer: "AWS Academy Graduate", date: "03 April 2025" },
     { name: "Data Analytics Job Simulation", issuer: "Deloitte (via Forage)", date: "26 February 2025" },
     { name: "Getting Started with DevOps", issuer: "LinkedIn", date: "21 june 2025" },
@@ -172,6 +181,17 @@ export default function Portfolio() {
       date: "10 Feb – 1 Mar 2025",
     },
     { name: "UI/UX", issuer: "Innovation Cell KIET", date: "11 October 2024" },
+  ]
+
+  const navItems = [
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#education", label: "Education" },
+    { href: "#experience", label: "Experience" },
+    { href: "#skills", label: "Skills" },
+    { href: "#projects", label: "Projects" },
+    { href: "#certifications", label: "Certifications" },
+    { href: "#contact", label: "Contact" },
   ]
 
   return (
@@ -197,17 +217,17 @@ export default function Portfolio() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              {["Home", "About", "Education", "Skills", "Projects", "Certifications", "Contact"].map((item) => (
+              {navItems.map((item) => (
                 <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
+                  key={item.label}
+                  onClick={() => scrollToSection(item.label.toLowerCase())}
                   className={`text-sm font-medium transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
-                    activeSection === item.toLowerCase()
+                    activeSection === item.label.toLowerCase()
                       ? "text-blue-600 border-b-2 border-blue-600 pb-1"
                       : "text-gray-700"
                   }`}
                 >
-                  {item}
+                  {item.label}
                 </button>
               ))}
             </div>
@@ -224,13 +244,13 @@ export default function Portfolio() {
           {/* Mobile Navigation Menu */}
           {isMenuOpen && (
             <div className="md:hidden py-4 border-t border-gray-200 bg-white/95 backdrop-blur-lg">
-              {["Home", "About", "Education", "Skills", "Projects", "Certifications", "Contact"].map((item) => (
+              {navItems.map((item) => (
                 <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
+                  key={item.label}
+                  onClick={() => scrollToSection(item.label.toLowerCase())}
                   className="block w-full text-left py-3 px-4 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200 rounded-lg mx-2"
                 >
-                  {item}
+                  {item.label}
                 </button>
               ))}
             </div>
@@ -555,7 +575,7 @@ ACHIEVEMENTS
           </div>
         </div>
       </section>
-
+      <Experience />
       {/* Skills Section */}
       <section id="skills" className="py-16 px-4 sm:px-6 lg:px-8 bg-white/80 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
