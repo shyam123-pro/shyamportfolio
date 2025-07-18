@@ -88,7 +88,7 @@ export default function Portfolio() {
 
         if (currentStep >= steps) {
           clearInterval(timer)
-          setCounters({ projects: 3, certifications: 6, cgpa: 8.92 })
+          setCounters({ projects: 3, certifications: 12, cgpa: 8.42 })
         }
       }, stepDuration)
     }
@@ -351,7 +351,7 @@ LinkedIn: linkedin.com/in/shyam-sundar-115797300 | GitHub: github.com/shyam123-p
 
 EDUCATION
 Masters of Computer Applications (MCA) | 2024-26
-KIET Group of Institutions, Ghaziabad (AKTU, Lucknow) | CGPA: 8.92
+KIET Group of Institutions, Ghaziabad (AKTU, Lucknow) | CGPA 8.42
 
 Bachelors Of Science (Vocational) | 2021-24
 Dr. Bhimrao Ambedkar University, Agra | Percentage: 78.34%
@@ -481,7 +481,7 @@ ACHIEVEMENTS
                   </li>
                   <li className="flex justify-between items-center p-2">
                     <strong>Current CGPA:</strong>
-                    <span className="text-blue-600 font-semibold">8.92 (Sem I)</span>
+                    <span className="text-blue-600 font-semibold">8.42 (Upto Sem 2)</span>
                   </li>
                   <li className="flex justify-between items-center p-2">
                     <strong>Languages:</strong>
@@ -517,7 +517,7 @@ ACHIEVEMENTS
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-2">Affiliated to AKTU, Lucknow</p>
-                <p className="font-semibold text-green-600 text-lg">CGPA (Sem I): 8.92</p>
+                <p className="font-semibold text-green-600 text-lg">CGPA (Up to Sem 2): 8.42</p>
               </CardContent>
             </Card>
 
