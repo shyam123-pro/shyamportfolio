@@ -408,18 +408,17 @@ ACHIEVEMENTS
                   const blob = new Blob([resumeContent], { type: "text/plain" })
                   const url = window.URL.createObjectURL(blob)
                   const link = document.createElement("a")
-                  link.href = url
-                  link.download = "Shyam-Sundar-Resume.pdf"
+                  link.href = "/resume/Shyam Tyagi Resume.pdf"
+                  link.download = "Shyam Tyagi Resume.pdf"
+                  link.target = "_blank"
                   document.body.appendChild(link)
                   link.click()
                   document.body.removeChild(link)
-                  window.URL.revokeObjectURL(url)
                 }}
                 variant="outline"
                 size="lg"
                 className="border-2 border-gray-300 hover:border-blue-500 hover:bg-blue-50 px-8 py-3 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                <a href="/resume.pdf" download></a>
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </Button>
@@ -896,62 +895,13 @@ ACHIEVEMENTS
                 <div className="text-center">
                   <Button
                     onClick={() => {
-                      // Create a downloadable resume content
-                      const resumeContent = `SHYAM SUNDAR
-+91 7599406897 | shyam.2426mca1971@kiet.edu
-LinkedIn: linkedin.com/in/shyam-sundar-115797300 | GitHub: github.com/shyam123-pro
-
-EDUCATION
-Masters of Computer Applications (MCA) | 2024-26
-KIET Group of Institutions, Ghaziabad (AKTU, Lucknow) | CGPA: 8.92
-
-Bachelors Of Science (Vocational) | 2021-24
-Dr. Bhimrao Ambedkar University, Agra | Percentage: 78.34%
-
-TECHNICAL SKILLS
-Languages: C, C++, Python, HTML/CSS, Django, SQL, JavaScript
-Databases: Oracle, MongoDB, MySQL
-Tools: AWS Cloud, Figma, Git, GitHub, VS Code, Postman, Jira
-
-PROJECTS
-Placement Portal (Jan-Apr 2025)
-- Web application for campus recruitment process
-- Technologies: HTML, CSS, JavaScript, Python, Django, MySQL
-
-Calories Tracker (Mar-May 2024)
-- Health monitoring web application
-- Technologies: Python, HTML, CSS, JavaScript, Django
-
-Doctor's Appointment System (Oct-Dec 2023)
-- Appointment booking and management system
-- Technologies: Python, MySQL
-
-CERTIFICATIONS
-- Python Essentials 1 & 2 - Cisco Networking Academy
-- Introduction to Cybersecurity - Cisco Networking Academy
-- CCNA Enterprise Networking, Security, and Automation - Cisco Networking Academy
-- CCNA Introduction to Networks - Cisco Networking Academy
-- CCNA Switching, Routing, and Wireless Essentials - Cisco Networking Academy
-- AWS Academy Cloud Foundations - AWS Academy
-- Data Analytics Job Simulation - Deloitte (via Forage)
-- UI/UX - Innovation Cell KIET
-- Getting Started with DevOps
-- Introduction to artificial Intelligence
-- Practice Github Project Management and Colla
-
-ACHIEVEMENTS
-- Gold Medal in Volleyball - Inter-School Sports Competition
-- Silver Medal in Chess - Inter-School Championship`
-
-                      const blob = new Blob([resumeContent], { type: "text/plain" })
-                      const url = window.URL.createObjectURL(blob)
                       const link = document.createElement("a")
-                      link.href = url
-                      link.download = "Shyam-Sundar-Resume.txt"
+                      link.href = "/resume/Shyam Tyagi Resume.pdf"
+                      link.download = "Shyam Tyagi Resume.pdf"
+                      link.target = "_blank"
                       document.body.appendChild(link)
                       link.click()
                       document.body.removeChild(link)
-                      window.URL.revokeObjectURL(url)
                     }}
                     size="lg"
                     className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 text-white px-10 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl"
