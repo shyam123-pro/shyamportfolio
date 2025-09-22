@@ -41,7 +41,7 @@ export default function Portfolio() {
 
   const profileImages = [
     { src: "/images/shyam-casual.jpg", alt: "Shyam Sundar - Casual", title: "Creative Developer" },
-    { src: "/images/shyam-formal.jpg", alt: "Shyam Sundar - Formal", title: "Professional Leader" },
+    { src: "/images/shyam-formal1.jpg", alt: "Shyam Sundar - Formal", title: "Professional Leader" },
   ]
 
   useEffect(() => {
